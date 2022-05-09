@@ -1,12 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {QueryClientProvider} from 'react-query';
 
 import {queryClient} from '@shared/helpers/constants';
 
-const withReactquery = (component: Component) => () =>
+const withReactquery = (component: () => React.ReactElement) => () =>
     (
         <QueryClientProvider client={queryClient}>
-            {/*@ts-ignore */}
             {component()}
         </QueryClientProvider>
     );

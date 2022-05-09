@@ -1,6 +1,6 @@
 import blue from '@mui/material/colors/blue';
 import {ThemeProvider, createTheme} from '@mui/material/styles';
-import React, {Component} from 'react';
+import React from 'react';
 
 const theme = createTheme({
     palette: {
@@ -8,12 +8,7 @@ const theme = createTheme({
     },
 });
 
-const withMui = (component: Component) => () =>
-    (
-        <ThemeProvider theme={theme}>
-            {/* @ts-ignore */}
-            {component()}
-        </ThemeProvider>
-    );
+const withMui = (component: () => React.ReactElement) => () =>
+    <ThemeProvider theme={theme}>{component()}</ThemeProvider>;
 
 export default withMui;
