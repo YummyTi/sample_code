@@ -1,0 +1,19 @@
+@import '@styles/base/colors';
+
+.wrapper {
+    flex: 2;
+}
+
+.btn {
+    color: $whiteColor !important;
+    text-transform: capitalize !important;
+    padding: 10px 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.iconAdd {
+    font-size: 25px;
+    margin-right: 12px;
+}

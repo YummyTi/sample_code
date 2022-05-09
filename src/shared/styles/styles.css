@@ -1,0 +1,21 @@
+#root {
+    background: #fff;
+    /* color-scheme: dark !important; */
+}
+
+.toastProgress {
+    background-color: #3492ff;
+}
+
+.css-26l3qy-menu {
+    z-index: 9999999999999999999999999999999999999999999999999 !important;
+}
+
+.css-7fb0v8-MuiPaper-root-MuiAccordion-root,
+.css-19deitw-MuiPaper-root-MuiAccordion-root {
+    background-color: 'transparent !important';
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+    color: white !important;
+}

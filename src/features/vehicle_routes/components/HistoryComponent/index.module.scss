@@ -1,0 +1,50 @@
+@import '@styles/base/colors';
+
+.userIcon {
+    color: $whiteColor;
+    background-color: $darkerColor;
+    fill: $whiteColor;
+}
+
+.itemRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 200px;
+
+    .actionTime {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: $darkerBlue;
+        margin: 0;
+    }
+
+    .itemHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .userName {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: $grayerColor;
+        }
+
+        .timeText {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            color: $grayIcon;
+        }
+    }
+}

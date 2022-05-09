@@ -1,0 +1,34 @@
+
+.ProtocolTitle{
+    margin-bottom: 14px;
+}
+
+.ProtocolTableWrap{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.protocolSaveBlock{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 36px;
+    padding-right: 28px;
+}
+
+.protocolBtn{
+    width: 167px;
+    height: 50px;
+}
+
+.protocolLoader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hideSaveBtn{
+    display: none;
+}

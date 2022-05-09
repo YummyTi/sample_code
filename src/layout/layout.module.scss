@@ -1,0 +1,40 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    .makeStyles-toolbar-9 {
+        min-height: 65px !important;
+    }
+
+    .MuiToolbar-gutters {
+        padding: 0 !important;
+    }
+
+    .outlet {
+        height: 100vh;
+        & > div {
+            height: 100vh;
+        }
+    }
+}
+
+.mainBox {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative !important;
+    width: 100%;
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #606eea;
+        border-radius: 14px 0px 0px 14px;
+    }
+
+    .drawHead {
+        min-height: 40px !important;
+    }
+}

@@ -1,0 +1,83 @@
+@import '@styles/base/colors';
+@import '@styles/base/mixins';
+
+%font {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: $grayerColor;
+}
+
+@mixin element($align) {
+    display: flex;
+    justify-content: space-between;
+    align-items: $align;
+    padding: 16px;
+    box-shadow: 0px 1px 0px $tableGray;
+    @extend %font;
+}
+
+@mixin btnInstance($color) {
+    height: 30px;
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 12px;
+    color: $color;
+    gap: 7px;
+}
+
+form {
+    height: 100%;
+}
+
+.header {
+    @include element($align: center);
+
+    .title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.01em;
+        color: $darkerBlue;
+    }
+
+    .exitIcon {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+.element {
+    @include element($align: center);
+}
+
+.startElement {
+    @include element($align: flex-start);
+}
+
+.routesElement {
+    @include element($align: flex-start);
+    flex-direction: column;
+    gap: 12px;
+}
+
+.searchInput {
+    @extend %font;
+    border: none;
+    margin-left: 4px;
+    max-width: 165px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-weight: 300;
+        color: $oneMoreGray;
+    }
+}
+
+.searchIcon {
+    margin-top: 2.6px;
+}

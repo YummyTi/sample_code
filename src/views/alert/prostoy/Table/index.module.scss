@@ -1,0 +1,38 @@
+@import '@styles/base/colors';
+
+.table {
+    width: 100%;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    tr td:first-child {
+        background-color: $whiteColor;
+    }
+
+    thead tr:hover {
+        background-color: $whiteColor;
+    }
+
+    td {
+        border: 1px solid $tableGray;
+        text-align: center;
+        padding: 9px;
+        color: $darkerBlue;
+    }
+
+    th {
+        color: $darkerBlue;
+        border: 1px solid $tableGray;
+    }
+}
+
+.trSelected {
+    background: $violetText;
+
+    &:hover {
+        background: $violetText;
+    }
+}

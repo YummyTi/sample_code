@@ -1,0 +1,47 @@
+.mainContainer {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.kppTablePrint {
+    width: 100%;
+    table {
+        width: 50%;
+    }
+
+    table thead {
+        position: static;
+        position: -webkit-static;
+        top: 0;
+        z-index: 99;
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+
+    div {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+.additionalInfo {
+    width: 100%;
+    display: flex;
+    div {
+        width: 50%;
+        table {
+            width: 100%;
+        }
+
+        table:first-child {
+            td div{
+                width: 100%;
+            }
+        }
+    }
+
+    div:first-child{
+        margin-right: 10px;
+    }
+    margin-bottom: 20px;
+}

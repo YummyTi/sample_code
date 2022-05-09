@@ -1,0 +1,39 @@
+.wrapperSearch {
+    display: flex;
+    flex-direction: column;
+    background-color: $whiteColor;
+    position: relative;
+    filter: none !important;
+    border-radius: 4px 4px 0 0;
+    transition: 1s all linear;
+    width: 100%;
+
+    .baseSideSearch {
+        padding: 0 !important;
+    }
+
+    .iconBoxSearch {
+        padding: 0 !important;
+
+        .activeSearch {
+            background-color: $darkerColor !important;
+            color: $whiteColor !important;
+        }
+
+        .sideSearch {
+            &:focus-within,
+            &:focus {
+                background-color: $darkerColor !important;
+                color: $whiteColor !important;
+            }
+        }
+    }
+
+    .loadingSearch {
+        height: 50px !important;
+    }
+
+    .bottomSideSearch {
+        top: 42px !important;
+    }
+}

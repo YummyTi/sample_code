@@ -1,0 +1,32 @@
+@import '@styles/base/colors';
+
+.container {
+    background: $subtleColor;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 32px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+
+    p {
+        margin: 0;
+    }
+
+    &:hover {
+        background: $mainColor;
+        color: $whiteColor;
+    }
+}
+
+.selected {
+    background: $mainColor;
+    color: $whiteColor;
+}

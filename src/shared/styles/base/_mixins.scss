@@ -1,0 +1,13 @@
+@mixin roundedIns($back, $color) {
+    display: flex;
+    background: $back;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 33px;
+    min-height: 36px;
+    min-width: 52px;
+    align-items: center;
+    letter-spacing: 0.0025em;
+    text-transform: uppercase;
+    color: $color;
+    font-weight: normal;
+}

@@ -1,0 +1,26 @@
+@import '@styles/base/colors';
+
+.btn {
+    padding: 12px !important;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    & > svg {
+        font-size: 25px !important;
+    }
+}
+
+.btnPrimary {
+    border-radius: 4px;
+    padding: 8px 12px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mainColor;
+    box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24);
+    gap: 10px;
+    & > svg {
+        font-size: 20px !important;
+    }
+}

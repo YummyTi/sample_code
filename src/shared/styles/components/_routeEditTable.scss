@@ -1,0 +1,120 @@
+@import '@styles/base/colors';
+
+tr {
+    transition: all 0.2s linear;
+}
+
+tr:hover {
+    background-color: $tableGrayColor;
+}
+
+th {
+    text-align: center;
+    padding: 10.5px 6.5px;
+}
+
+.fulltable {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+    max-height: 770px;
+    // max-height: 800px;
+    overflow-y: auto;
+}
+
+.fulltable table thead {
+    position: sticky;
+    background-color: #fff;
+    top: -1px;
+    z-index: 99;
+}
+
+.vehicleRouteTableWrapper {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+    max-height: 500px;
+    // max-height: 800px;
+    overflow-y: auto;
+}
+
+.vehicleRouteTableWrapper table thead {
+    position: sticky;
+    background-color: #fff;
+    top: -1px;
+    z-index: 99;
+}
+
+.routeEditTable {
+    background-color: #fff;
+    color: #070f3f;
+    font-family: 'Roboto';
+    border: 1px solid #e9eaed;
+    border-collapse: collapse;
+    // table-layout: fixed;
+    // white-space: nowrap;
+
+    // tbody {
+    //     border-collapse: separate;
+    //     border-spacing: 0 15px;
+    // }
+
+    // tbody {
+    //     display: block;
+    //     // width: 100% !important;
+    //     overflow-y: auto !important;
+    //     height: 100%;
+    //     overflow-x: hidden;
+    // }
+
+    tr,
+    td,
+    th {
+        border: 1px solid #e9eaed;
+        border-collapse: collapse;
+        cursor: pointer;
+    }
+
+    tr:focus-within td,
+    tr:focus-within td input {
+        color: #4455ea;
+    }
+    tr:focus-within td:nth-child(1) {
+        color: #070f3f;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        outline: none;
+    }
+
+    td:focus-within {
+        background-color: $whiteColor;
+    }
+}
+
+.stationNameCell {
+    padding-left: 10px;
+}
+
+.tableInput {
+    width: 60px;
+    height: 37px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #070f3f;
+}
+.tableInput:nth-child(1) {
+    background-color: $whiteColor;
+}
+
+.table-text-center {
+    padding: 10.5px 0;
+    text-align: center;
+}
+
+.tableInput:focus {
+    outline: 0.2px solid #0063f7;
+}
+
+// .tableInput:has(> td):focus {
+//     background-color: #fff;
+// }

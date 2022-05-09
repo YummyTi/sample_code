@@ -1,0 +1,62 @@
+@import '@styles/base/colors';
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 32px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.commentTitle {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 32px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.textArea {
+    padding-right: 9px;
+    width: 100%;
+}
+
+.button {
+    margin-top: 24px;
+    margin-bottom: 18px;
+    padding-right: 34px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btnPrimary {
+        background-color: $mainColor;
+        color: $whiteColor;
+        padding: 12px 30px;
+        border-radius: 6px;
+        text-transform: capitalize;
+    }
+}

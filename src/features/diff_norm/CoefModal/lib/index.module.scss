@@ -1,0 +1,21 @@
+@import '@styles/base/colors';
+
+.deleteBtn {
+    background-color: $errorColor;
+    padding: 5px;
+}
+
+.applyBtn {
+    background-color: $mainColor;
+    padding: 2px;
+}
+
+.applyIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon {
+    width: 14px;
+    height: 14px;
+}

@@ -1,0 +1,154 @@
+@import '@styles/base/colors';
+
+.appBar {
+    height: 56px;
+    background: $whiteColor;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.02) !important;
+
+    .hide {
+        display: none;
+    }
+
+    .closeBtn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .toolbar {
+        min-height: 56px !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menuBtn {
+            fill: $blackColor;
+        }
+        .leftSide {
+            flex: 1;
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+        .rightSide {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 25px;
+            height: 100%;
+            .menu {
+                font-size: 13px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                color: $darkBlue;
+                margin: 0px 4px;
+            }
+
+            .generalMenu {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .gMenuIcon {
+                    font-size: 20px;
+                }
+            }
+
+            .user {
+                cursor: pointer;
+                gap: 10px;
+
+                .avatar {
+                    font-size: 24px;
+                }
+
+                .arrDwn {
+                    font-size: 20px;
+                }
+            }
+
+            .timer {
+                border-right: 1px solid rgba(0, 0, 0, 0.02);
+                padding-right: 10px;
+            }
+
+            .onlineUsers {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .icUser {
+                    font-size: 28px;
+                }
+
+                .chipColor {
+                    background: $yellowColor;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.4px;
+                    color: $blackLightColor;
+                }
+
+                .arrowDown {
+                    font-size: 22px;
+                    margin-left: 5px;
+                }
+
+                .textUser {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 24px;
+                    color: $darkerBlue;
+                    margin: 0px 4px;
+                }
+            }
+
+            .calendarWrapper {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                .dateTime {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 24px;
+                    letter-spacing: 0.4px;
+                    color: $darkBlue;
+                    margin: 0px 4px;
+                }
+            }
+
+            .langPicker {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 5px 0;
+            }
+
+            .logoutBtn {
+                height: 35px;
+                overflow: hidden;
+
+                .btnLog {
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+
+                    .btnText {
+                        .MuiListItemText-primary {
+                            font-size: 14px !important;
+                        }
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+}

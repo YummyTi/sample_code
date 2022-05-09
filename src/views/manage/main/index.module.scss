@@ -1,0 +1,7 @@
+@import '@styles/base/colors';
+
+.success {
+    color: $chipSuccess;
+    border-color: $chipSuccess;
+    font-weight: normal;
+}

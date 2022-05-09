@@ -1,0 +1,134 @@
+.row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.flex__space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex__end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex__start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center__file {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $whiteColor;
+    padding: 18px 16px;
+}
+
+.flex__one {
+    flex: 1;
+}
+
+.body__side {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 70%;
+    gap: 8px;
+    row-gap: 15px;
+    flex: 1;
+    padding: 0 16px;
+
+    .chips__container {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-height: 20%;
+        gap: 8px;
+        row-gap: 15px;
+        padding: 0 16px;
+    }
+}
+
+.activeStyle {
+    color: $whiteColor !important;
+    background: $mainColor !important;
+    box-shadow: 0px 4px 9px rgba(96, 110, 234, 0.46);
+}
+
+.inactiveStyle {
+    background: $whiteColor !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    color: $mainColor !important;
+}
+
+// margins and grid system
+.mb_24 {
+    margin-bottom: 24px;
+}
+
+.rg_16 {
+    row-gap: 16px;
+}
+
+.cg_30 {
+    column-gap: 30px;
+}
+
+.flex__wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.v__overflow {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #606eea;
+        border-radius: 5px 0px 5px 5px;
+    }
+}
+
+.grid__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(31%, 1fr));
+}
+
+.p_10 {
+    padding: 10px;
+}
+
+.gap_24 {
+    gap: 24px;
+}

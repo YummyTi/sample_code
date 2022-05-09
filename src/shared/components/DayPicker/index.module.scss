@@ -1,0 +1,29 @@
+@import '@styles/base/colors';
+
+.container {
+    width: 100%;
+    transition: 1s all linear;
+}
+
+.active {
+    background-color: $subtleColor !important;
+
+    & > svg {
+        path {
+            fill: $mainColor;
+        }
+    }
+}
+
+.activeInput {
+    background-color: $mainColor !important;
+
+    input {
+        color: $whiteColor !important;
+    }
+}
+
+.icon {
+    width: 21px;
+    height: 24px;
+}

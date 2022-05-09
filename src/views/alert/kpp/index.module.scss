@@ -1,0 +1,31 @@
+.controlIntervalWrapper {
+    padding: 16px;
+}
+
+.topTablesWrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    table {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #070f3f;
+    }
+}
+
+.exportBtnWrapper{
+    margin-top: 16px;
+}
+.exportBtn{
+    background-color: #6C60E4 !important;
+    color: #fff !important;
+
+    &:hover{
+        background-color: #6C60E4;
+    }
+}
+
+.kppTables{
+    margin-top: 32px;
+}

@@ -1,0 +1,41 @@
+.wrapLogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    .wrapLogoText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .logoTitle {
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22.462px;
+            line-height: 25px;
+            letter-spacing: 0.99831px;
+            color: #1117a3;
+        }
+
+        .subTitle {
+            margin: 0;
+            padding: 0;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 3.64335px;
+            line-height: 4px;
+            letter-spacing: 0.42em;
+            text-transform: uppercase;
+            color: #b8b9e6;
+        }
+    }
+
+    .logo {
+        font-size: 34px;
+    }
+}

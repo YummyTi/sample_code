@@ -1,0 +1,17 @@
+@import '@styles/base/colors';
+
+.container {
+    margin-top: 36px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btnPrimary {
+        background-color: $mainColor;
+        color: $whiteColor;
+        padding: 12px 30px;
+        border-radius: 6px;
+        text-transform: capitalize;
+    }
+}

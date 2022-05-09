@@ -1,0 +1,28 @@
+.main__modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__container {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: $whiteColor;
+    min-width: 500px;
+    max-width: 600px;
+    gap: 25px;
+
+    .modal__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .modal__footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 15px;
+        margin-top: 25px;
+    }
+}

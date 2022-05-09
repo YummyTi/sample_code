@@ -1,0 +1,47 @@
+image: ubuntu:latest
+
+stages:
+  - build
+  - deploy
+
+before_script:
+  - 'command -v ssh-agent >/dev/null || ( apt update -y && apt install openssh-client -y)'
+  - eval $(ssh-agent -s)
+  - echo "$ID_RSA" | tr -d '\r' | ssh-add -
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - echo "" > ~/.ssh/known_hosts
+
+
+install_dependencies:
+  image: node:16.13.2
+  stage: build
+  tags:
+    - deployment
+  script:
+    - rm -vrf build/ node_modules/ yarn.lock
+    - npm cache clean --force
+    - npm install --force
+    - npm run build
+    - echo 'build Bo`ldi '
+
+deploy_production:
+  image: node:16.13.2
+  stage: deploy
+  tags:
+    - deployment
+    
+  variables:
+    BASI_API_URL: 8080/api/
+    
+  script:
+    - npm install --force
+    - npm run build
+    - scp -ro StrictHostKeyChecking=no -P 300 dist/* kafka@167.160.91.82:/var/www/html
+    - echo "Finished copying the build files"
+   
+    
+  environment:
+    name: production
+  only:
+    - dev

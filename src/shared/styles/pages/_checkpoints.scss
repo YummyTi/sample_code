@@ -1,0 +1,63 @@
+.roundedBlue {
+    @include roundedIns($back: $mainColor, $color: $whiteColor);
+    word-break: break-all;
+    max-width: 220px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.routesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 10px;
+    max-height: 270px;
+    overflow-y: auto;
+}
+
+.roundedTrash {
+    @include roundedIns($back: $mainColor, $color: $whiteColor);
+    justify-content: space-between;
+    padding-left: 30px;
+    height: 36px;
+    width: 122px;
+}
+
+.trashDiv {
+    background: #ff3b3b;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    width: 36px;
+    height: 36px;
+
+    .trashIcon {
+        width: 9.33px;
+        height: 12px;
+    }
+}
+
+.routeDiv {
+    @include roundedIns($back: $violetText, $color: $mainColor);
+    border: 1px solid $mainColor;
+    justify-content: space-between;
+    padding-left: 30px;
+    height: 36px;
+    width: 122px;
+    border-right-style: none;
+}
+
+.btnAdd {
+    background-color: $successColor !important;
+    color: $whiteColor !important;
+    width: 122px;
+    height: 40px;
+    margin-top: 12px;
+
+    .plusIcon {
+        margin-right: 7px;
+        width: 16px;
+        height: 16px;
+    }
+}

@@ -1,0 +1,104 @@
+@import '@styles/base/colors';
+
+.container {
+    background-color: $whiteColor;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+    overflow-x: auto;
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        .theader {
+            // display: flex;
+            width: 100%;
+
+            .thRow {
+                // display: flex;
+                font-size: 12px;
+
+                .th {
+                    border: 1px solid $tableGray;
+                    color: $darkerBlue;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 17px;
+                    padding: 8px 18px;
+                }
+
+                .thFirst {
+                    border-top: none !important;
+                }
+            }
+        }
+
+        .tbody {
+            .bodyRow {
+                font-size: 12px;
+
+                &:hover {
+                    color: $mainColor;
+                    cursor: pointer;
+
+                    color: $mainColor;
+
+                    input {
+                        color: $mainColor;
+                    }
+
+                    td {
+                        color: $mainColor !important;
+
+                        svg {
+                            path {
+                                fill: $errorColor;
+                            }
+                        }
+                    }
+                }
+
+                .td {
+                    border: 1px solid $tableGray;
+                    color: $darkerBlue;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 17px;
+                    padding: 8px 18px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// Editable Cell
+.inputData {
+    background-color: $whiteColor;
+    border: none;
+    color: $darkerBlue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    &:focus-within {
+        border: 1px solid $mainColor;
+        outline: none;
+    }
+}

@@ -1,0 +1,27 @@
+@import '@styles/base/colors';
+
+.inputWrapper {
+    margin-bottom: 20px;
+    width: 186px;
+
+    .inputLabel,
+    .inputText {
+        color: $darkerBlue;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+    }
+
+    .inputText {
+        margin: 0;
+    }
+}
+
+.labelDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 6px;
+}

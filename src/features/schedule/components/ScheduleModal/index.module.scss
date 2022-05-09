@@ -1,0 +1,13 @@
+@import '@styles/base/colors';
+.mContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 650px;
+    max-width: 1000px;
+    max-height: 830px;
+    background-color: $whiteColor;
+    margin: 0;
+    border-radius: 8px;
+}

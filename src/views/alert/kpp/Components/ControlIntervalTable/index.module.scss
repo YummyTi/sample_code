@@ -1,0 +1,20 @@
+.controlIntervalTables {
+    display: flex;
+    height: 500px;
+    overflow-y: auto;
+    justify-content: space-between;
+
+
+    table thead {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 99;
+        margin-bottom: 20px;
+        background-color: #fff;
+    }
+
+    table:first-child {
+        margin-right: 10px;
+    }
+}

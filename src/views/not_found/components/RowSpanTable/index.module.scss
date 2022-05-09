@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.tr:before {
+    /* This doesn't work because of border-collapse */
+    // line-height: 1em;
+    // content: '.';
+    // color: white; /* bacground color */
+    // display: block;
+    border-spacing: 15px;
+    // margin-top: 15px;
+}

@@ -1,0 +1,18 @@
+@import '@styles/base/colors';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+
+        .button {
+            background-color: $mainColor;
+            box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24);
+        }
+    }
+}

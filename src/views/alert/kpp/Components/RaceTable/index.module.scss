@@ -1,0 +1,17 @@
+.raceTableTitle{
+    position: relative;
+}
+
+.raceTable{
+    width: 300px;
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.raceTableCount{
+    color: #563EE4;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,34 @@
+@import '@styles/base/colors';
+.rightSide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .select {
+        height: 30px;
+        width: 140px;
+
+        .MuiInputBase-input {
+            font-size: 14px;
+        }
+    }
+
+    .rightText {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        /* identical to box height, or 200% */
+
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        color: $subtleLightGrayColor;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 12px;
+    }
+}
