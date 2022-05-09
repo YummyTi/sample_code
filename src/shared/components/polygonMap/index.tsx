@@ -1,3 +1,4 @@
+// @ts-nocheck
 import './styles.css';
 
 import React, {useEffect, useRef, useState} from 'react';

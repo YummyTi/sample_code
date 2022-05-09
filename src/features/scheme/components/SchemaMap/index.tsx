@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useEffect, useRef} from 'react';
 import OutsideClickHandler from 'react-outside-click-handler';
 import {

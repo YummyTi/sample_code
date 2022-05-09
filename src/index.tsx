@@ -1,3 +1,4 @@
+// @ts-nocheck
 import 'react-toastify/dist/ReactToastify.css';
 import 'leaflet/dist/leaflet.css';
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import {Map, YMaps} from 'react-yandex-maps';
 

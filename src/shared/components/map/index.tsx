@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {Collapse, Fade} from '@mui/material';
 import {motion} from 'framer-motion';
 // import {useMapStore} from '@src/store/map';

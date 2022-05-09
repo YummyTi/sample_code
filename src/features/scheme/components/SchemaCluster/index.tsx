@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import {Clusterer, Placemark} from 'react-yandex-maps';
 import shallow from 'zustand/shallow';
